@@ -1,27 +1,24 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';	
-import Hero from '~/components/widgets/Hero.astro';	
-import Note from '~/components/widgets/Note.astro';	
-import Features from '~/components/widgets/Features.astro';	
-import Features2 from '~/components/widgets/Features2.astro';	
-import Steps from '~/components/widgets/Steps.astro';	
-import Content from '~/components/widgets/Content.astro';	
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';	
-import FAQs from '~/components/widgets/FAQs.astro';	
-import Stats from '~/components/widgets/Stats.astro';	
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
- 
 
-
-const metadata = {
- title: 'Art University Student Support Platform',
-  ignoreTitleTemplate: true,
+const metadata = { 
+  title: 'Art University Student Support Platform', 
+  ignoreTitleTemplate: true 
 };
----
 
-<Layout metadata={metadata}>
+<Layout metadata={metadata}> 
   <!-- Hero Widget ******************* -->
-
   <Hero
     actions={[
       {
@@ -48,10 +45,12 @@ const metadata = {
       <span class="block mb-1 sm:hidden font-bold text-blue-600">Empower Art Students!</span>
       Support aspiring artists by contributing monthly or annually and receive high-quality reproductions of their work.
     </Fragment>
-  </Hero>
-
+  </Hero> 
+  
+  <!-- Note Widget ******************* --> 
+  <Note /> 
+  
   <!-- Features Widget *************** -->
-
   <Features
     id="features"
     tagline="Features"
@@ -98,7 +97,6 @@ const metadata = {
   />
 
   <!-- Content Widget **************** -->
-
   <Content
     isReversed
     tagline="Inside the Platform"
@@ -133,7 +131,215 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
+  </Content> 
+  
+  <!-- Content Widget **************** -->
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'High Level of Customization',
+        description: `Easily tailor the platform to match your preferences and engage with the artists in a meaningful way.`,
+      },
+      {
+        title: 'Multiple Contribution Options',
+        description:
+          'Choose between annual or monthly contributions to support the artists you believe in.',
+      },
+      {
+        title: 'Fully Responsive Design',
+        description:
+          "Access the platform seamlessly on any device, ensuring a smooth user experience.",
+      },
+      {
+        title: 'Integration of Art',
+        description:
+          'Enjoy access to various artworks and artists' stories, enriching your understanding of the art world.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
+      alt: 'Blueprint Image',
+    }}
+  >
+    <Fragment slot="content">Ensure your online presence truly represents your commitment to supporting art.</Fragment>
+
+<Fragment slot="bg">	
+<div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>	
+</Fragment>	
+</Content>	
+<!-- Content Widget **************** -->	
+<Content	
+isReversed	
+isAfterContent	
+items={[	
+{	
+title: 'Enhanced user engagement',	
+description:	
+'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',	
+},	
+{	
+title: 'Continuous improvement',	
+description:	
+'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',	
+},	
+{	
+title: 'Time and resource efficiency',	
+description:	
+'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',	
+},	
+{	
+title: 'Community support',	
+description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,	
+},	
+]}	
+image={{	
+src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',	
+alt: 'Astronauts Image',	
+}}	
+>	
+<Fragment slot="content">Designed to foster growth and success.
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content> 
+  
+  <!-- Steps Widget ****************** -->
+  <Steps
+    title="Get Involved in Supporting Art Students Today!"
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Sign Up</span>',
+        description:
+          "Create an account on our platform to start your journey of supporting art students. It's quick and easy!",
+        icon: 'tabler:package',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Choose Your Support</span>',
+        description:
+          "Select the level of financial support you wish to provide, whether it's monthly or annually.",
+        icon: 'tabler:letter-case',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Enjoy the Art</span>',
+        description:
+          'Receive high-quality reproductions of the artworks during your support period and connect with the artists.',
+        icon: 'tabler:paint',
+      },
+      {
+        title: 'Ready!',
+        icon: 'tabler:check',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      alt: 'Steps image',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+  <Features2
+    title="Most Important Features"
+    subtitle="Explore the components that make our platform unique in supporting art students."
+    tagline="Components"
+    items={[
+      {
+        title: 'Artwork Display',
+        description: "Showcase the original artworks created by art students, allowing supporters to appreciate their talent.",
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: 'Support Options',
+        description:
+          "Flexible support options that cater to different preferences, making it easy for anyone to contribute.",
+        icon: 'flat-color-icons:gallery',
+      },
+      {
+        title: 'Transparent Funding',
+        description:
+          'Clear breakdown of how contributions are utilized to ensure fair compensation for artists.',
+        icon: 'flat-color-icons:approval',
+      },
+      {
+         title: 'Contact',
+        description:
+          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
+        icon: 'flat-color-icons:business-contact',
+      },
+      {
+        title: 'Footers',
+        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
+        icon: 'flat-color-icons:database',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- HighlightedPosts Widget ******* -->
+
+  <BlogLatestPosts
+    title="Find out more content in our Blog"
+    information={`The blog is used to display AstroWind documentation.
+                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
+                        Astro is a very interesting technology. Thanks.
+                `}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Frequently Asked Questions"
+    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    tagline="FAQs"
+    classes={{ container: 'max-w-6xl' }}
+    items={[
+      {
+        title: 'Why AstroWind?',
+        description:
+          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+      },
+      {
+        title: 'What do I need to start?',
+        description:
+          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+      },
+      {
+        title: 'How to install the Astro + Tailwind CSS template?',
+        description:
+          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+      },
+      {
+        title: "What's something that you don't understand?",
+        description:
+          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+      },
+      {
+        title: 'What is something that you would like to try again?',
+        description:
+          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+      },
+      {
+        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        description:
+          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+      },
+    ]}
+  />
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    stats={[
+      { title: 'Downloads', amount: '132K' },
+      { title: 'Stars', amount: '24.8K' },
+      { title: 'Forks', amount: '10.3K' },
+      { title: 'Users', amount: '48.4K' },
+    ]}
+  />
 
   <!-- CallToAction Widget *********** -->
 
@@ -141,7 +347,7 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Support a Student',
+        text: 'Get template',
         href: 'https://github.com/onwidget/astrowind',
         target: '_blank',
         icon: 'tabler:download',
@@ -149,11 +355,12 @@ const metadata = {
     ]}
   >
     <Fragment slot="title">
-      Join Us in Supporting Art Students
+      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Your contributions empower artists. <br class="hidden md:inline" />Don't wait! Start supporting today!
+      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
+      waste more time! :P
     </Fragment>
   </CallToAction>
 </Layout>
