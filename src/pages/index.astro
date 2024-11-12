@@ -1,4 +1,3 @@
----
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
@@ -12,13 +11,15 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
-const metadata = { 
-  title: 'Art University Student Support Platform', 
-  ignoreTitleTemplate: true 
+const metadata = {
+  title: 'Art University Student Support Platform',
+  ignoreTitleTemplate: true,
 };
+---
 
-<Layout metadata={metadata}> 
+<Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
+
   <Hero
     actions={[
       {
@@ -45,12 +46,14 @@ const metadata = {
       <span class="block mb-1 sm:hidden font-bold text-blue-600">Empower Art Students!</span>
       Support aspiring artists by contributing monthly or annually and receive high-quality reproductions of their work.
     </Fragment>
-  </Hero> 
-  
-  <!-- Note Widget ******************* --> 
-  <Note /> 
-  
+  </Hero>
+
+  <!-- Note Widget ******************* -->
+
+  <Note />
+
   <!-- Features Widget *************** -->
+
   <Features
     id="features"
     tagline="Features"
@@ -97,6 +100,7 @@ const metadata = {
   />
 
   <!-- Content Widget **************** -->
+
   <Content
     isReversed
     tagline="Inside the Platform"
@@ -131,9 +135,10 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content> 
-  
+  </Content>
+
   <!-- Content Widget **************** -->
+
   <Content
     isAfterContent
     items={[
@@ -154,7 +159,7 @@ const metadata = {
       {
         title: 'Integration of Art',
         description:
-          'Enjoy access to various artworks and artists' stories, enriching your understanding of the art world.',
+          'Enjoy access to various artworks and artists\' stories, enriching your understanding of the art world.',
       },
     ]}
     image={{
@@ -162,52 +167,55 @@ const metadata = {
       alt: 'Blueprint Image',
     }}
   >
-    <Fragment slot="content">Ensure your online presence truly represents your commitment to supporting art.</Fragment>
-
-<Fragment slot="bg">	
-<div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>	
-</Fragment>	
-</Content>	
-<!-- Content Widget **************** -->	
-<Content	
-isReversed	
-isAfterContent	
-items={[	
-{	
-title: 'Enhanced user engagement',	
-description:	
-'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',	
-},	
-{	
-title: 'Continuous improvement',	
-description:	
-'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',	
-},	
-{	
-title: 'Time and resource efficiency',	
-description:	
-'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',	
-},	
-{	
-title: 'Community support',	
-description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,	
-},	
-]}	
-image={{	
-src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',	
-alt: 'Astronauts Image',	
-}}	
->	
-<Fragment slot="content">Designed to foster growth and success.
+    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content> 
-  
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent
+    items={[
+      {
+        title: 'Enhanced user engagement',
+        description:
+          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
+      },
+      {
+        title: 'Continuous improvement',
+        description:
+          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
+      },
+      {
+        title: 'Time and resource efficiency',
+        description:
+          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
+      },
+      {
+        title: 'Community support',
+        description: `Join the growing community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Astronauts Image',
+    }}
+  >
+    <Fragment slot="content">Designed to foster growth and success.</Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
   <!-- Steps Widget ****************** -->
+
   <Steps
-    title="Get Involved in Supporting Art Students Today!"
+    title="Get involved in supporting art students today!"
     items={[
       {
         title: 'Step 1: <span class="font-medium">Sign Up</span>',
@@ -232,37 +240,60 @@ alt: 'Astronauts Image',
         icon: 'tabler:check',
       },
     ]}
-    image={{
+       image={{
       src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
       alt: 'Steps image',
     }}
   />
 
   <!-- Features2 Widget ************** -->
+
   <Features2
-    title="Most Important Features"
-    subtitle="Explore the components that make our platform unique in supporting art students."
+    title="Most used widgets"
+    subtitle="Provides frequently used components for building websites using Tailwind CSS"
     tagline="Components"
     items={[
       {
-        title: 'Artwork Display',
-        description: "Showcase the original artworks created by art students, allowing supporters to appreciate their talent.",
+        title: 'Headers',
+        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
         icon: 'flat-color-icons:template',
       },
       {
-        title: 'Support Options',
+        title: 'Heros',
         description:
-          "Flexible support options that cater to different preferences, making it easy for anyone to contribute.",
+          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
         icon: 'flat-color-icons:gallery',
       },
       {
-        title: 'Transparent Funding',
+        title: 'Features',
         description:
-          'Clear breakdown of how contributions are utilized to ensure fair compensation for artists.',
+          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
         icon: 'flat-color-icons:approval',
       },
       {
-         title: 'Contact',
+        title: 'Content',
+        description:
+          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
+        icon: 'flat-color-icons:document',
+      },
+      {
+        title: 'Call-to-Action',
+        description:
+          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
+        icon: 'flat-color-icons:advertising',
+      },
+      {
+        title: 'Pricing',
+        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
+        icon: 'flat-color-icons:currency-exchange',
+      },
+      {
+        title: 'Testimonial',
+        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
+        icon: 'flat-color-icons:voice-presentation',
+      },
+      {
+        title: 'Contact',
         description:
           'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
         icon: 'flat-color-icons:business-contact',
