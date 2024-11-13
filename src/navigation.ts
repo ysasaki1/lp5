@@ -4,19 +4,19 @@ export const headerData = {
       text: 'Homes',
       links: [
         {
-          text: 'SaaS',
+          text: 'Art Support',
           href: getPermalink('/homes/saas'),
         },
         {
-          text: 'Startup',
+          text: 'Artist Showcase',
           href: getPermalink('/homes/startup'),
         },
         {
-          text: 'Mobile App',
+          text: 'Become a Supporter',
           href: getPermalink('/homes/mobile-app'),
         },
         {
-          text: 'Personal',
+          text: 'Personal Support',
           href: getPermalink('/homes/personal'),
         },
       ],
@@ -29,15 +29,15 @@ export const headerData = {
           href: getPermalink('/#features'),
         },
         {
-          text: 'Services',
+          text: 'How It Works',
           href: getPermalink('/services'),
         },
         {
-          text: 'Pricing',
+          text: 'Support Plans',
           href: getPermalink('/pricing'),
         },
         {
-          text: 'About us',
+          text: 'About Us',
           href: getPermalink('/about'),
         },
         {
@@ -49,7 +49,7 @@ export const headerData = {
           href: getPermalink('/terms'),
         },
         {
-          text: 'Privacy policy',
+          text: 'Privacy Policy',
           href: getPermalink('/privacy'),
         },
       ],
@@ -58,27 +58,27 @@ export const headerData = {
       text: 'Landing',
       links: [
         {
-          text: 'Lead Generation',
+          text: 'Support Artists',
           href: getPermalink('/landing/lead-generation'),
         },
         {
-          text: 'Long-form Sales',
+          text: 'Artworks',
           href: getPermalink('/landing/sales'),
         },
         {
-          text: 'Click-Through',
+          text: 'Gallery',
           href: getPermalink('/landing/click-through'),
         },
         {
-          text: 'Product Details (or Services)',
+          text: 'Artist Details',
           href: getPermalink('/landing/product'),
         },
         {
-          text: 'Coming Soon or Pre-Launch',
+          text: 'Upcoming Events',
           href: getPermalink('/landing/pre-launch'),
         },
         {
-          text: 'Subscription',
+          text: 'Subscription Plans',
           href: getPermalink('/landing/subscription'),
         },
       ],
@@ -91,19 +91,19 @@ export const headerData = {
           href: getBlogPermalink(),
         },
         {
-          text: 'Article',
+          text: 'Support Stories',
           href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
         },
         {
-          text: 'Article (with MDX)',
+          text: 'Art Techniques',
           href: getPermalink('markdown-elements-demo-post', 'post'),
         },
         {
-          text: 'Category Page',
+          text: 'Categories',
           href: getPermalink('tutorials', 'category'),
         },
         {
-          text: 'Tag Page',
+          text: 'Tags',
           href: getPermalink('astro', 'tag'),
         },
       ],
@@ -125,8 +125,8 @@ export const footerData = {
         { text: 'Security', href: '#' },
         { text: 'Team', href: '#' },
         { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
+        { text: 'Customer Stories', href: '#' },
+        { text: 'Support Plans', href: '#' },
         { text: 'Resources', href: '#' },
       ],
     },
@@ -137,7 +137,7 @@ export const footerData = {
         { text: 'Partners', href: '#' },
         { text: 'Atom', href: '#' },
         { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: '(仮) Desktop', href: '#' },
       ],
     },
     {
@@ -153,7 +153,7 @@ export const footerData = {
     {
       title: 'Company',
       links: [
-        { text: 'About', href: '#' },
+        { text: 'About Us', href: '#' },
         { text: 'Blog', href: '#' },
         { text: 'Careers', href: '#' },
         { text: 'Press', href: '#' },
