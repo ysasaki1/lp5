@@ -8,7 +8,7 @@ import Features3 from '~/components/widgets/Features3.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Pricing',
+  title: 'Support Plans',
 };
 ---
 
@@ -16,94 +16,82 @@ const metadata = {
   <!-- HeroText Widget ******************* -->
 
   <HeroText
-    tagline="Pricing"
-    title="Stellar Pricing for Every Journey"
-    subtitle="Choose the perfect plan that aligns with your cosmic goals."
+    tagline="Support Plans"
+    title="Plans to Support Art Students"
+    subtitle="Choose the perfect plan that aligns with your goals."
   />
 
   <!-- Pricing Widget ******************* -->
 
   <Prices
-    title="Our prices"
-    subtitle="Only pay for what you need"
+    title="Our Plans"
+    subtitle="Pay only for what you need"
     prices={[
       {
-        title: 'basic',
-        subtitle: 'Optimal choice for personal use',
-        price: 29,
+        title: 'Basic Plan',
+        subtitle: 'Ideal for individual support',
+        price: 100,
         period: 'per month',
         items: [
           {
-            description: 'Etiam in libero, et volutpat',
+            description: 'A basic plan to support art students.',
           },
           {
-            description: 'Aenean ac nunc dolor tristique',
+            description: 'Anonymous support is available.',
           },
           {
-            description: 'Cras scelerisque accumsan lib',
-          },
-          {
-            description: 'In hac habitasse',
+            description: 'Receive high-quality replicas of the artwork.',
           },
         ],
         callToAction: {
           target: '_blank',
-          text: 'Get started',
+          text: 'Start Supporting',
           href: '#',
         },
       },
       {
-        title: 'standard',
-        subtitle: 'Optimal choice for small teams',
-        price: 69,
-        period: 'Per Month',
+        title: 'Standard Plan',
+        subtitle: 'Best for small teams',
+        price: 250,
+        period: 'per month',
         items: [
           {
-            description: 'Proin vel laoreet',
+            description: 'Support multiple art students.',
           },
           {
-            description: 'Ut efficitur habitasse egestas',
+            description: 'Invitation to special art events.',
           },
           {
-            description: 'Volutpat hac curabitur',
-          },
-          {
-            description: 'Pellentesque blandit ut nibh',
-          },
-          {
-            description: 'Donec fringilla sem',
+            description: 'Access to the supporter community.',
           },
         ],
         callToAction: {
           target: '_blank',
-          text: 'Get started',
+          text: 'Start Supporting',
           href: '#',
         },
         hasRibbon: true,
-        ribbonTitle: 'popular',
+        ribbonTitle: 'Popular',
       },
       {
-        title: 'premium',
-        subtitle: 'Optimal choice for companies',
-        price: 199,
-        period: 'Per Month',
+        title: 'Premium Plan',
+        subtitle: 'For corporate support',
+        price: 500,
+        period: 'per month',
         items: [
           {
-            description: 'Curabitur suscipit risus',
+            description: 'Access to a private gallery of artworks.',
           },
           {
-            description: 'Aliquam habitasse malesuada',
+            description: 'Detailed reports on your support activities.',
           },
           {
-            description: 'Suspendisse sit amet blandit',
-          },
-          {
-            description: 'Suspendisse auctor blandit dui',
+            description: 'Participation in exclusive art workshops.',
           },
         ],
         callToAction: {
           target: '_blank',
-          text: 'Get started',
+          text: 'Start Supporting',
           href: '#',
         },
       },
@@ -113,38 +101,38 @@ const metadata = {
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Price-related features"
-    subtitle="Discover the advantages of choosing our plans"
+    title="Features of Our Plans"
+    subtitle="Discover the advantages of choosing our support plans"
     columns={2}
     items={[
       {
-        title: 'Tiered Pricing Plans',
-        description: 'Choose from a range of pricing plans designed to accommodate different budgets and requirements.',
+        title: 'Tiered Support Plans',
+        description: 'Choose from a variety of support plans to fit different budgets and needs.',
         icon: 'tabler:stairs',
       },
       {
         title: 'Transparent Pricing',
-        description: 'Clearly displayed pricing details for each plan, with no hidden costs or unexpected charges.',
+        description: 'Clear pricing details for each plan, with no hidden costs.',
         icon: 'tabler:flip-vertical',
       },
       {
         title: 'Secure Payment Methods',
-        description: 'Secure payment gateways to protect your financial information during transactions.',
+        description: 'Secure payment gateways to protect your financial information.',
         icon: 'tabler:shield-lock',
       },
       {
         title: 'Instant Access',
-        description: `Immediate access to your chosen plan's features and templates upon subscription.`,
+        description: `Immediate access to the artworks upon starting your support.`,
         icon: 'tabler:accessible',
       },
       {
         title: 'Upgrade Value',
-        description: 'Upgrade to higher-tier plans to unlock more features and benefits for an enhanced experience.',
+        description: 'Upgrade to higher-tier plans for more features and benefits.',
         icon: 'tabler:chevrons-up',
       },
       {
-        title: '24H support',
-        description: 'Questions answered via live chat, email or phone, every calendar day.',
+        title: '24/7 Support',
+        description: 'Questions answered via live chat, email, or phone every day.',
         icon: 'tabler:headset',
       },
     ]}
@@ -154,16 +142,16 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="A guided journey from plans to creativity"
-    tagline="simplified process"
+    title="A Guided Journey from Support to Creativity"
+    tagline="Simplified Process"
     isReversed={true}
     items={[
       {
-        title: 'Explore plans',
+        title: 'Explore Plans',
         icon: 'tabler:number-1',
       },
       {
-        title: 'Select a plan',
+        title: 'Select a Plan',
         icon: 'tabler:number-2',
       },
       {
@@ -171,11 +159,11 @@ const metadata = {
         icon: 'tabler:number-3',
       },
       {
-        title: 'Review order',
+        title: 'Review Order',
         icon: 'tabler:number-4',
       },
       {
-        title: 'Enter payment details',
+        title: 'Enter Payment Details',
         icon: 'tabler:number-5',
       },
       {
@@ -183,47 +171,47 @@ const metadata = {
         icon: 'tabler:number-6',
       },
       {
-        title: 'Download and start using the template(s)',
+        title: 'Download and Start Using the Artworks',
         icon: 'tabler:number-7',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1536816579748-4ecb3f03d72a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      alt: 'Steps Image',
     }}
   />
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Pricing FAQs"
-    subtitle="Choosing the right plan is important, and we're here to answer your questions. If you have queries about our pricing options, you're in the right place."
+    title="Support Plan FAQs"
+    subtitle="Choosing the right plan is important, and we're here to answer your questions."
     columns={1}
     items={[
       {
-        title: 'Do the plans come with customer support?',
+        title: 'Do the plans include customer support?',
         description:
-          'Absolutely, all plans include access to our dedicated customer support to assist you with any queries or concerns.',
+          'Absolutely, all plans include access to our dedicated customer support for any questions you have.',
       },
       {
-        title: 'Is there a trial period for the different plans?',
+        title: 'Is there a trial period for the plans?',
         description:
-          "Unfortunately, we don't offer trial periods for the plans. However, you can check out our demo section to preview the quality of our templates.",
+          "Unfortunately, we don't offer trial periods. However, you can check out our demo section to preview the quality of our offerings.",
       },
       {
         title: 'Can I switch between plans?',
         description:
-          'Certainly! You can easily upgrade or downgrade your plan, at any time, to find the one that best suits your evolving requirements.',
+          'Certainly! You can easily upgrade or downgrade your plan at any time.',
       },
       {
         title: 'What payment methods do you accept?',
         description:
-          'We accept major credit cards and online payment methods to ensure a convenient and secure transaction process.',
+          'We accept major credit cards and online payment methods for secure transactions.',
       },
       {
         title: 'Are there any hidden fees beyond the displayed cost?',
         description:
-          'No, the subscription cost covers all the features and templates listed under each plan. There are no hidden fees or extra charges.',
+          'No, the subscription cost covers all features and benefits listed under each plan. There are no hidden fees.',
       },
     ]}
   />
@@ -231,12 +219,12 @@ const metadata = {
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    title="Ready to boost your projects?"
-    subtitle="Join our community of satisfied customers who have transformed their work with our templates."
+    title="Ready to Support Art Students?"
+    subtitle="Join our community of satisfied supporters who have made a difference."
     actions={[
       {
         variant: 'primary',
-        text: 'Get started now',
+        text: 'Start Supporting Now',
         href: '/',
       },
     ]}
