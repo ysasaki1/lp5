@@ -13,7 +13,7 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 
 const metadata = {
-  title: 'SaaS Landing Page',
+  title: 'Art Student Support Platform',
 };
 ---
 
@@ -40,27 +40,24 @@ const metadata = {
   <!-- Hero2 Widget ******************* -->
 
   <Hero2
-    tagline="SaaS Web Demo"
+    tagline="Support Art Students"
     actions={[
       { variant: 'primary', target: '_blank', text: 'Get Started', href: 'https://github.com/onwidget/astrowind' },
       { text: 'Learn more', href: '#features' },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1580481072645-022f9a6dbf27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'AstroWind Hero Image',
+      alt: 'Art Support Hero Image',
     }}
   >
     <Fragment slot="title">
-      Simplify web design with Astrowind: <br /> your ultimate <span class="text-accent dark:text-white highlight"
-        >SaaS</span
-      > companion<br />
+      Empower artists with your support: <br /> your ultimate <span class="text-accent dark:text-white highlight">Art Student Platform</span><br />
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        Elevate your website creation process with <span class="font-semibold">AstroWind</span>'s SaaS solutions.</span
-      >
-      Seamlessly blend the power of Astro 4.0 and Tailwind CSS to craft websites that resonate with your brand and audience.
+        Elevate your impact on the art community with <span class="font-semibold">Support Art Students</span>'s solutions.</span>
+      Support original artwork creation and receive high-quality replicas during the support period.
     </Fragment>
   </Hero2>
 
@@ -68,40 +65,40 @@ const metadata = {
 
   <Features
     id="features"
-    title="Why choose AstroWind?"
-    subtitle="Each of the following features enhances AstroWind's value proposition."
+    title="Why choose our platform?"
+    subtitle="Each feature enhances the value we provide to art students and supporters."
     columns={2}
     items={[
       {
-        title: 'Integration of Astro 4.0 and Tailwind CSS',
+        title: 'Support for Original Artwork',
         description:
-          'Offers a powerful combination that enhances both the development process and the end-user experience. Also, allows to build dynamic and visually stunning websites with optimized performance.',
+          'Facilitates the creation of unique artworks by talented students, ensuring their artistic expression is nurtured.',
         icon: 'tabler:layers-union',
       },
       {
-        title: 'Versatile design for startups, small businesses, and more',
-        description: `Easily customize AstroWind to harmonize with the unique branding and identity of your venture. AstroWind's versatile design adapts to suit your needs.`,
+        title: 'Flexible Support Plans',
+        description: `Choose from various support plans that fit your budget and commitment level while helping students thrive.`,
         icon: 'tabler:artboard',
       },
       {
-        title: 'Effortless customization for portfolios and marketing sites',
+        title: 'High-Quality Replicas',
         description:
-          'With intuitive customization, easily showcase portfolio pieces, case studies, project highlights, and relevant content. Ideal for creative professionals and businesses looking to highlight their expertise.',
+          'Receive exquisite replicas of the original artworks during the support period, showcasing the students’ talent.',
         icon: 'tabler:writing',
       },
       {
-        title: 'Optimized landing pages and engaging blogs',
-        description: `Landing pages are strategically designed to captivate visitors and prompt specific actions. Additionally, the blog creation feature empowers sharing insights, engaging the audience.`,
+        title: 'Community Engagement',
+        description: `Join a vibrant community of art lovers and supporters, fostering connections and collaboration.`,
         icon: 'tabler:podium',
       },
       {
-        title: 'Fast loading times and production-ready code',
-        description: `Using Astro 4.0 ensures fast loading and seamless rendering, enhancing browsing. The code follows best practices, improving user experience, SEO, and reducing bounce rates.`,
+        title: 'Impactful Contributions',
+        description: `Your support directly impacts the lives of aspiring artists, helping them pursue their dreams.`,
         icon: 'tabler:rocket',
       },
       {
-        title: 'SEO-optimized structure for enhanced visibility',
-        description: `Follows SEO best practices with clean code, semantic HTML markup, and fast loading, enhancing search engine rankings. AstroWind's SEO structure ensures visibility to potential customers and clients.`,
+        title: 'Anonymous Support',
+        description: `Support students anonymously, allowing them to focus on their artistic journey without added pressure.`,
         icon: 'tabler:eyeglass',
       },
     ]}
@@ -111,27 +108,27 @@ const metadata = {
 
   <Content
     title="Use cases"
-    subtitle="Discover how AstroWind's versatile template serves as the ideal solution for various use cases, providing tailored solutions to drive success."
+    subtitle="Discover how our platform supports various art students and their unique projects."
     isReversed
     items={[
       {
         title: 'Description:',
         description:
-          'Are you a startup with big dreams? AstroWind propels your success. Our template forges a seamless online presence, attracting investors and customers from day one. Astro 4.0 and Tailwind CSS ensure striking, responsive sites, leaving lasting impressions. Countless startups leverage AstroWind to kickstart their journey and resonate with audiences.',
+          'Are you an aspiring artist with big dreams? Our platform propels your success by connecting you with supporters. Original artworks are created, showcasing your talent and creativity.',
       },
       {
         title: 'Benefits:',
-        description: `Allow startups to quickly create professional websites without investing extensive time and resources. <br /> Make a memorable first impression with visually appealing design elements that highlight your startup's unique value proposition. <br /> Ensures your website looks stunning and works well on all devices. <br /> Engage potential investors and customers with engaging content, clear messaging, and intuitive navigation.`,
+        description: `Allow artists to quickly create and showcase their work without extensive resources. <br /> Make a memorable first impression with stunning artwork that highlights your unique value. <br /> Ensure your art is seen and appreciated by a wider audience. <br /> Engage supporters with captivating stories about your artistic journey.`,
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1620558138198-cfb9b4f3c294?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1671&q=80',
-      alt: 'Startup Image',
+      alt: 'Art Showcase',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Startup success stories: <br /><span class="text-2xl">Launching with AstroWind</span>
+        Artist success stories: <br /><span class="text-2xl">Creating with Support</span>
       </h3>
     </Fragment>
 
@@ -147,21 +144,21 @@ const metadata = {
     items={[
       {
         title: 'Description:',
-        description: `For SaaS businesses, user experience is key. AstroWind enhances showcasing SaaS solutions intuitively. The template's Astro 4.0 and Tailwind CSS integration guarantees user-friendly experience, mirroring your software's efficiency. Customize pages to communicate SaaS value and solutions for your audience.`,
+        description: `For art students, support is key. Our platform enhances showcasing their original artwork intuitively. The integration of support ensures a user-friendly experience, mirroring their artistic journey. Customize pages to communicate their value and solutions for art lovers.`,
       },
       {
         title: 'Benefits:',
-        description: `Ensuring a cohesive and user-centric design for your SaaS website. <br /> Effectively communicate complex SaaS features through visual aids, animations, and interactive elements. <br /> Prioritize user needs and pain points through well-structured layouts and clear navigation. <br /> Encourage visitors to take action with strategically placed CTAs. <br /> Ensures your SaaS website works seamlessly across all devices.`,
+        description: `Ensure a cohesive and artist-centric design for showcasing work. <br /> Effectively communicate artistic features through visual aids and storytelling. <br /> Prioritize artist needs and presentation through well-structured layouts and clear navigation. <br /> Encourage visitors to support artists with strategically placed calls to action. <br /> Ensure that artworks are accessible across all devices.`,
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1531973486364-5fa64260d75b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1658&q=80',
-      alt: 'SaaS Businesses Image',
+      alt: 'Art Support Image',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        SaaS showcase: <br /><span class="text-2xl">Streamlining user experience</span>
+        Art showcase: <br /><span class="text-2xl">Streamlining artistic expression</span>
       </h3>
     </Fragment>
 
@@ -178,7 +175,7 @@ const metadata = {
     items={[
       {
         title: 'Description:',
-        description: `Your portfolio is your masterpiece, and AstroWind is your canvas. Whether you're a designer, photographer, artist, or any other creative professional, AstroWind empowers you to showcase your work with elegance and sophistication. Tailored to highlight your creative projects, AstroWind's templates offer a visually immersive experience that lets your portfolio shine.`,
+        description: `Your portfolio is your masterpiece, and our platform is your canvas. Whether you\'re a painter, sculptor, or digital artist, our platform empowers you to showcase your work with elegance. Tailored to highlight creative projects, our templates offer a visually immersive experience.`,
       },
       {
         title: 'Benefits:',
@@ -187,7 +184,7 @@ const metadata = {
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Portfolio Image',
+      alt: 'Portfolio Showcase',
     }}
   >
     <Fragment slot="content">
@@ -202,26 +199,25 @@ const metadata = {
   </Content>
 
   <!-- Content Widget **************** -->
-
-  <Content
+<Content
     items={[
       {
         title: 'Description:',
-        description: `For small businesses, a well-crafted website can be a game-changer. AstroWind empowers small businesses to not only establish a credible online presence but also convert visitors into loyal customers. The template's thoughtful design and optimization features ensure that your website doesn't just attract attention but also guides visitors through a seamless journey, ultimately leading to conversions.`,
+        description: `For art students, a well-crafted platform can be a game-changer. Our platform empowers art students to establish a credible online presence and connect with supporters. The thoughtful design and optimization features ensure that your artwork is showcased beautifully, guiding visitors through a seamless journey to support you.`,
       },
       {
         title: 'Benefits:',
-        description: `Present your small business with a professional and polished website that instills confidence and trust among visitors. <br /> Strategically placed CTAs, user-friendly forms, and optimized layouts work together to drive user engagement and conversions. <br /> Ensure a smooth browsing experience, reducing bounce rates and encouraging interaction.`,
+        description: `Present your artwork with a professional and polished profile that instills confidence and trust among supporters. <br /> Strategically placed calls to action, user-friendly forms, and optimized layouts work together to drive engagement and support. <br /> Ensure a smooth browsing experience, reducing bounce rates and encouraging interaction.`,
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1514621166532-aa7eb1a3a2f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Small Business Image',
+      alt: 'Art Support Image',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Small business growth: <br /><span class="text-2xl">Converting visitors into customers</span>
+        Supporting Artists: <br /><span class="text-2xl">Converting visitors into supporters</span>
       </h3>
     </Fragment>
 
@@ -233,11 +229,11 @@ const metadata = {
   <!-- Pricing Widget ******************* -->
 
   <Pricing
-    title="Flexible pricing plans"
+    title="Flexible Support Plans"
     prices={[
       {
-        title: 'free',
-        subtitle: 'Access to core features and a wide range of templates',
+        title: 'Free',
+        subtitle: 'Access to core features and support for artists',
         price: '0',
         period: '/ month',
         callToAction: {
@@ -247,26 +243,26 @@ const metadata = {
         },
       },
       {
-        title: 'pro',
-        subtitle: 'Premium templates and advanced customization',
+        title: 'Supporter',
+        subtitle: 'Premium support and exclusive access to artworks',
         price: 15,
         period: '/ Month',
         callToAction: {
           target: '_blank',
-          text: 'Upgrade to Pro',
+          text: 'Upgrade to Supporter',
           href: '#',
         },
         hasRibbon: true,
         ribbonTitle: 'popular',
       },
       {
-        title: 'Enterprise',
-        subtitle: 'Tailored solutions for large-scale projects',
+        title: 'Patron',
+        subtitle: 'Tailored solutions for large-scale support',
         price: 45,
         period: '/ Month',
         callToAction: {
           target: '_blank',
-          text: 'Unlock Enterprise Features',
+          text: 'Unlock Patron Features',
           href: '#',
         },
       },
@@ -279,24 +275,24 @@ const metadata = {
     title="Frequently Asked Questions"
     items={[
       {
-        title: 'Is AstroWind compatible with the latest versions of Astro and Tailwind CSS?',
+        title: 'Is this platform compatible with various art styles and mediums?',
         description:
-          'Yes, AstroWind is designed to be compatible with the latest versions of both Astro and Tailwind CSS. This ensures that you can harness the full capabilities of these technologies while benefiting from the features offered by AstroWind.',
+          'Yes, our platform is designed to support a wide range of artistic styles and mediums, ensuring that every artist can showcase their unique work.',
         icon: 'tabler:chevrons-right',
       },
       {
-        title: 'Can I use AstroWind for both personal and commercial projects?',
-        description: `Certainly! AstroWind is versatile and can be used for a wide range of projects, including both personal and commercial endeavors. Whether you're building a professional portfolio, launching a startup, or creating a marketing website, AstroWind has you covered.`,
+        title: 'Can I support multiple artists at once?',
+        description: `Certainly! You can choose to support as many artists as you like through our platform. Your contributions will help them thrive in their artistic journeys.`,
         icon: 'tabler:chevrons-right',
       },
       {
-        title: 'What level of coding knowledge is required to use AstroWind?',
+        title: 'What level of involvement is required to support artists?',
         description:
-          'While some familiarity with HTML, CSS, and web development concepts is helpful, the user-friendly interface and customization options allow those with limited coding experience to create impressive websites. For more advanced users, AstroWind offers extensive customization capabilities.',
+          'You can choose your level of involvement. Whether you want to provide financial support or simply promote artists, there are options for everyone.',
         icon: 'tabler:chevrons-right',
       },
       {
-        title: 'Is customer support available for AstroWind users seeking guidance?',
+        title: 'Is customer support available for users seeking guidance?',
         description: `Absolutely, our dedicated customer support team is here to assist you with any questions or challenges you may encounter. Feel free to reach out to us through our support channels, and we'll be happy to provide the help you need.`,
         icon: 'tabler:chevrons-right',
       },
@@ -319,7 +315,7 @@ const metadata = {
     items={[
       {
         title: 'Email us',
-        description: 'contact@support.com',
+        description: 'support@artplatform.com',
         icon: 'tabler:mail',
       },
       {
@@ -329,7 +325,7 @@ const metadata = {
       },
       {
         title: 'Follow us',
-        description: '@example',
+        description: '@artplatform',
         icon: 'tabler:brand-twitter',
       },
     ]}
@@ -339,8 +335,8 @@ const metadata = {
 
   <BlogLatestPosts
     id="blog"
-    title="Stay informed with AstroWind's blog"
-    information={`Explore our collection of articles, guides, and tutorials on web development, design trends, and using AstroWind effectively for your projects.`}
+    title="Stay informed with our blog"
+    information={`Explore our collection of articles, guides, and tutorials on art support, creative processes, and how to effectively use our platform for your artistic journey.`}
   >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
