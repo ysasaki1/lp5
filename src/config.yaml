@@ -1,5 +1,5 @@
 site:
-  name: (仮) 
+  name: (仮) marker
   site: 'https://owls-edu.com/'
   base: '/'
   trailingSlash: false
