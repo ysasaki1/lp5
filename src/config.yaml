@@ -1,6 +1,6 @@
 site:
   name: (仮) 
-  site: 'https://astrowind.vercel.app'
+  site: 'https://owls-edu.com/'
   base: '/'
   trailingSlash: false
 
