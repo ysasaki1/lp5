@@ -7,7 +7,7 @@ import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'About us',
+  title: 'About Us',
 };
 ---
 
@@ -15,60 +15,58 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="About us"
+    tagline="About Us"
     image={{
       src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Caos Image',
+      alt: 'Art Student Support Image',
     }}
   >
     <Fragment slot="title">
-      Elevate your online presence with our <br />
-      <span class="text-accent dark:text-white highlight"> Beautiful Website Templates</span>
+      Empower Art Students through <br />
+      <span class="text-accent dark:text-white highlight"> Our Platform</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Donec efficitur, ipsum quis congue luctus, mauris magna convallis mauris, eu auctor nisi lectus non augue. Donec
-      quis lorem non massa vulputate efficitur ac at turpis. Sed tincidunt ex a nunc convallis, et lobortis nisi tempus.
-      Suspendisse vitae nisi eget tortor luctus maximus sed non lectus.
+      Join us in providing financial support to art students, enabling them to create original artworks. Your contributions help aspiring artists thrive while receiving high-quality reproductions of their work.
     </Fragment>
   </Hero>
 
   <!-- Stats Widget ****************** -->
 
   <Stats
-    title="Statistics about us"
+    title="Statistics about Us"
     stats={[
-      { title: 'Offices', amount: '4' },
-      { title: 'Employees', amount: '248' },
-      { title: 'Templates', amount: '12' },
-      { title: 'Awards', amount: '24' },
+      { title: 'Artists Supported', amount: '500+' },
+      { title: 'Artworks Created', amount: '1,200+' },
+      { title: 'Supporters Joined', amount: '3,000+' },
+      { title: 'Community Events', amount: '50+' },
     ]}
   />
 
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Our templates"
-    subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
+    title="Our Support"
+    subtitle="Support art students while enjoying access to their unique artwork."
     columns={3}
     isBeforeContent={true}
     items={[
       {
-        title: 'Educational',
+        title: 'Artwork Creation',
         description:
-          'Morbi faucibus luctus quam, sit amet aliquet felis tempor id. Cras augue massa, ornare quis dignissim a, molestie vel nulla.',
+          'Provide financial assistance to art students, helping them create original artworks.',
         icon: 'tabler:template',
       },
       {
-        title: 'Interior Design',
+        title: 'Receive High-Quality Reproductions',
         description:
-          'Vivamus porttitor, tortor convallis aliquam pretium, turpis enim consectetur elit, vitae egestas purus erat ac nunc nulla.',
+          'Enjoy high-definition reproductions of the artworks during the support period.',
         icon: 'tabler:template',
       },
       {
-        title: 'Photography',
+        title: 'Transparent Funding',
         description:
-          'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
+          '80% of the support goes directly to the artists, ensuring they receive fair compensation.',
         icon: 'tabler:template',
       },
     ]}
@@ -81,68 +79,68 @@ const metadata = {
     isAfterContent={true}
     items={[
       {
-        title: 'E-commerce',
+        title: 'Community Engagement',
         description:
-          'Rutrum non odio at vehicula. Proin ipsum justo, dignissim in vehicula sit amet, dignissim id quam. Sed ac tincidunt sapien.',
+          'Join a community that values and uplifts aspiring artists.',
         icon: 'tabler:template',
       },
       {
-        title: 'Blog',
+        title: 'Flexible Contribution Options',
         description:
-          'Nullam efficitur volutpat sem sed fringilla. Suspendisse et enim eu orci volutpat laoreet ac vitae libero.',
+          'Choose between annual or monthly contributions to support the artists you believe in.',
         icon: 'tabler:template',
       },
       {
-        title: 'Business',
+        title: 'Secure Storage',
         description:
-          'Morbi et elit finibus, facilisis justo ut, pharetra ipsum. Donec efficitur, ipsum quis congue luctus, mauris magna.',
+          'The platform securely stores the original artworks, ensuring their safety and preservation.',
         icon: 'tabler:template',
       },
       {
-        title: 'Branding',
+        title: 'Impactful Support',
         description:
-          'Suspendisse vitae nisi eget tortor luctus maximus sed non lectus. Cras malesuada pretium placerat. Nullam venenatis dolor a ante rhoncus.',
+          'Your contributions directly impact the lives of art students, helping them pursue their passion.',
         icon: 'tabler:template',
       },
       {
-        title: 'Medical',
+        title: 'Discover New Talent',
         description:
-          'Vestibulum malesuada lacus id nibh posuere feugiat. Nam volutpat nulla a felis ultrices, id suscipit mauris congue. In hac habitasse platea dictumst.',
+          'Explore the works of emerging artists and support their journey in the art world.',
         icon: 'tabler:template',
       },
       {
-        title: 'Fashion Design',
+        title: 'Anonymous Support',
         description:
-          'Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus.',
+          'Supporters can remain anonymous while contributing to the artists’ success.',
         icon: 'tabler:template',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'Colorful Image',
+      alt: 'Art Showcase Image',
     }}
   />
 
   <!-- Steps2 Widget ****************** -->
 
   <Steps2
-    title="Our values"
-    subtitle="Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus. Nulla facilisi. Vestibulum malesuada lacus."
+    title="Our Values"
+    subtitle="We believe in supporting creativity and fostering talent within the art community."
     items={[
       {
-        title: 'Customer-centric approach',
+        title: 'Artist-Centric Approach',
         description:
-          'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo. Ut eleifend luctus condimentum.',
+          'We prioritize the needs and aspirations of our artists, ensuring they thrive.',
       },
       {
         title: 'Constant Improvement',
         description:
-          'Phasellus laoreet fermentum venenatis. Vivamus dapibus pulvinar arcu eget mattis. Fusce eget mauris leo.',
+          'We are committed to providing ongoing support to help artists achieve their goals.',
       },
       {
         title: 'Ethical Practices',
         description:
-          'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+          'We uphold ethical standards in our support practices and artist interactions.',
       },
     ]}
   />
@@ -151,7 +149,7 @@ const metadata = {
 
   <Steps2
     title="Achievements"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
+    subtitle="Celebrating the impact of our support on the lives of art students."
     isReversed={true}
     callToAction={{
       text: 'See more',
@@ -159,20 +157,20 @@ const metadata = {
     }}
     items={[
       {
-        title: 'Global reach',
-        description: 'Nam malesuada urna in enim imperdiet tincidunt. Phasellus non tincidunt nisi, at elementum mi.',
+        title: 'Global Reach',
+        description: 'Our platform connects artists and supporters from around the world.',
         icon: 'tabler:globe',
       },
       {
-        title: 'Positive customer feedback and reviews',
+        title: 'Positive Feedback',
         description:
-          'Cras semper nulla leo, eget laoreet erat cursus sed. Praesent faucibus massa in purus iaculis dictum.',
+          'We receive heartfelt testimonials from both artists and supporters.',
         icon: 'tabler:message-star',
       },
       {
-        title: 'Awards and recognition as industry experts',
+        title: 'Awards and Recognition',
         description:
-          'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
+          'Our initiative has been recognized for its positive contributions to the art community.',
         icon: 'tabler:award',
       },
     ]}
@@ -181,25 +179,25 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Our locations"
+    title="Our Locations"
     tagline="Find us"
     columns={4}
     items={[
       {
-        title: 'EE.UU',
-        description: '1234 Lorem Ipsum St, 12345, Miami',
+        title: 'USA',
+        description: '1234 Art St, 12345, New York',
       },
       {
         title: 'Spain',
-        description: '5678 Lorem Ipsum St, 56789, Madrid',
+        description: '5678 Creative Ave, 56789, Barcelona',
       },
       {
         title: 'Australia',
-        description: '9012 Lorem Ipsum St, 90123, Sydney',
+        description: '9012 Art Lane, 90123, Melbourne',
       },
       {
         title: 'Brazil',
-        description: '3456 Lorem Ipsum St, 34567, São Paulo',
+        description: '3456 Culture Rd, 34567, Rio de Janeiro',
       },
     ]}
   />
@@ -214,13 +212,13 @@ const metadata = {
       {
         title: 'Chat with us',
         description:
-          'Integer luctus laoreet libero, auctor varius purus rutrum sit amet. Ut nec molestie nisi, quis eleifend mi.',
+          'We are here to assist you with any inquiries. Reach out via chat for immediate support.',
         icon: 'tabler:messages',
       },
       {
         title: 'Call us',
         description:
-          'Mauris faucibus finibus orci, in posuere elit viverra non. In hac habitasse platea dictumst. Cras lobortis metus a hendrerit congue.',
+          'For more personalized assistance, feel free to call us anytime. We are happy to help.',
         icon: 'tabler:headset',
       },
     ]}
