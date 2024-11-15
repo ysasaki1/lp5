@@ -1,14 +1,15 @@
 ---
-publishDate: 2023-07-15T00:00:00Z
-title: 仮3
-excerpt: 仮3
-image: https://images.unsplash.com/photo-1561069934-eee225952461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80
+publishDate: 2023-08-12T00:00:00Z
+author: "a a"
+title: "Empowering Art Students: A Support Platform for Creatives3"
+excerpt: "Support aspiring artists by contributing to their artistic journey and receive high-quality reproductions of their work. Explore our platform now."
+image: "https://images.unsplash.com/photo-1561069934-eee225952461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+category: "Tutorials"
 tags:
-  - landing-pages
-  - front-end
-  - resources
+  - "astro"
+  - "tailwind css"
 metadata:
-  canonical: https://astrowind.vercel.app/landing
+  canonical: "https://astrowind.vercel.app/get-started-website-with-astro-tailwind-css"
 ---
 
 Support for art college students is our mission. Through our platform, painting majors create original artworks while supporters contribute either $1000 annually or $100 monthly. The original works are securely stored by us, and high-quality reproductions are provided to supporters during their contribution period. 
